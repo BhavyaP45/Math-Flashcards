@@ -695,7 +695,6 @@ main_window = Tk()
 main_window.title("Math Flash Cards")
 main_window.geometry("500x650")
 #Icon in Window Display. Source: Lakindu
-main_window.iconbitmap("amongus_icon.ico")
 
 #Establish Style
 style = ttk.Style()
@@ -747,19 +746,16 @@ count_frame.grid(row = 1, column = 1, columnspan = 2, rowspan = 6, padx = (70, 2
 #*Options/Title Frame Widgets*
 
 #Title for the Initial Frame
-main_title = Label(title_frame, text = "Among Us Arithmetic", font = ("Amatic SC", \
+main_title = Label(title_frame, text = "Astronaut Arithmetic", font = ("Amatic SC", \
     40), fg = "white", bg = "black")
 
 #Among Us character beside the main title. 
-among_us_character = PhotoImage(file = "orange_among_us.png")
 #Put the image in a label 
-character_label = Label(title_frame, image = among_us_character, bg = "black")
 
 #Grid row #1
 #Padx and pady parameters can take a tuple, with information for the left and right
     #sides. Source: https://stackoverflow.com/questions/4174575/adding-padding-to-a-tkinter-widget-only-on-one-side
-main_title.grid(row = 0, column = 0, columnspan = 3, padx = (10,0), pady= (20, 10))
-character_label.grid(row = 0, column = 3, sticky = W, pady = (23, 0))
+main_title.grid(row = 0, column = 0, columnspan = 6, padx = (10,0), pady= (20, 10))
 
 #Name 
 name = Label(title_frame, text = "Created by: Bhavya Patel 2023", \
@@ -1030,12 +1026,8 @@ log_frame.columnconfigure((0,1), weight = 1)
 reset_log.grid(row = 1, column = 0, pady = 10, columnspan = 2)
 
 #Among Us Character
-among_us_character_2 = PhotoImage(file = "among_us_character_2.png")
-among_us_character_2_label = Label(log_frame, image = among_us_character_2, \
-    bg = "black")
 
 #Grid row #3
-among_us_character_2_label.grid(row = 2, column = 0, columnspan = 2)
 #*Quantified Widgets*
 #Initialize the quantified widgets, only placing in a grid and hiding in the 
 #function. 

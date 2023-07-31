@@ -749,8 +749,6 @@ count_frame.grid(row = 1, column = 1, columnspan = 2, rowspan = 6, padx = (70, 2
 main_title = Label(title_frame, text = "Astronaut Arithmetic", font = ("Amatic SC", \
     40), fg = "white", bg = "black")
 
-#Among Us character beside the main title. 
-#Put the image in a label 
 
 #Grid row #1
 #Padx and pady parameters can take a tuple, with information for the left and right
@@ -1025,7 +1023,6 @@ log_frame.columnconfigure((0,1), weight = 1)
 #Grid row #2
 reset_log.grid(row = 1, column = 0, pady = 10, columnspan = 2)
 
-#Among Us Character
 
 #Grid row #3
 #*Quantified Widgets*
